@@ -1,6 +1,6 @@
-﻿using Pirates.Translator.Service.Primitives.Enums;
+﻿using Pirates.Translator.Primitives.Enums;
 
-namespace Pirates.Translator.Service.Primitives.Extensions;
+namespace Pirates.Translator.Primitives.Extensions;
 
 public static class EnumExtensions
 {

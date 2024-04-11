@@ -1,4 +1,4 @@
-﻿namespace Pirates.Translator.Service.Primitives.Enums;
+﻿namespace Pirates.Translator.Primitives.Enums;
 
 public enum OS
 {

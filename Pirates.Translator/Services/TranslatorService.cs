@@ -1,9 +1,9 @@
-﻿using Pirates.Translator.Service.Primitives.Enums;
-using Pirates.Translator.Service.Primitives.Extensions;
+﻿using Pirates.Translator.Primitives.Enums;
+using Pirates.Translator.Primitives.Extensions;
 using System.Net;
 using System.Web;
 
-namespace Pirates.Translator.Service.Services;
+namespace Pirates.Translator.Services;
 
 public interface ITranslatorService
 {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Pirates.Translator.Service.Primitives.Enums;
-using Pirates.Translator.Service.Services;
+using Pirates.Translator.Primitives.Enums;
+using Pirates.Translator.Services;
 
-namespace Pirates.Translator.Service.Initialization;
+namespace Pirates.Translator.Initialization;
 
 public static class Init
 {

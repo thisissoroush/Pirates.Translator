@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Pirates.Translator.Service.Initialization;
-using Pirates.Translator.Service.Primitives.Enums;
-using Pirates.Translator.Service.Services;
+using Pirates.Translator.Initialization;
+using Pirates.Translator.Primitives.Enums;
+using Pirates.Translator.Services;
 
 var builder = WebApplication.CreateSlimBuilder(args);
 
