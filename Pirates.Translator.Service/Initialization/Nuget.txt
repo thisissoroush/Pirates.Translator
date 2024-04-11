@@ -1,0 +1,1 @@
+﻿dotnet nuget push Pirates.Translator.1.0.0.nupkg --api-key oy2da4q3dwayxl6lb5eawvuvgh6uljreflzo2m3wzazdxu --source https://api.nuget.org/v3/index.json --skip-duplicate

@@ -1,0 +1,67 @@
+﻿
+namespace Pirates.Translator.Service.Primitives.Enums;
+
+
+public enum Language
+{
+    [Code("ar")]
+    Arabic,
+    [Code("az")]
+    Azerbaijani,
+    [Code("ca")]
+    Catalan,
+    [Code("zh")]
+    Chinese,
+    [Code("cs")]
+    Czech,
+    [Code("da")]
+    Danish,
+    [Code("nl")]
+    Dutch,
+    [Code("en")]
+    English,
+    [Code("eo")]
+    Esperanto,
+    [Code("fi")]
+    Finnish,
+    [Code("fr")]
+    French,
+    [Code("de")]
+    German,
+    [Code("el")]
+    Greek,
+    [Code("he")]
+    Hebrew,
+    [Code("hi")]
+    Hindi,
+    [Code("hu")]
+    Hungarian,
+    [Code("id")]
+    Indonesian,
+    [Code("ga")]
+    Irish,
+    [Code("it")]
+    Italian,
+    [Code("ja")]
+    Japanese,
+    [Code("ko")]
+    Korean,
+    [Code("fa")]
+    Persian,
+    [Code("pl")]
+    Polish,
+    [Code("pt")]
+    Portuguese,
+    [Code("ru")]
+    Russian,
+    [Code("sk")]
+    Slovak,
+    [Code("es")]
+    Spanish,
+    [Code("sv")]
+    Swedish,
+    [Code("tr")]
+    Turkish,
+    [Code("uk")]
+    Ukrainian
+}

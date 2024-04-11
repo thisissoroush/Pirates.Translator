@@ -1,0 +1,11 @@
+@Pirates.Translator_HostAddress = http://localhost:5112
+
+GET {{Pirates.Translator_HostAddress}}/api/
+Accept: application/json
+
+###
+
+GET {{Pirates.Translator_HostAddress}}/api/translate
+Accept: application/json
+
+###
