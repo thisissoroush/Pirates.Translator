@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Primitives\Protos\Translate.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.62.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pirates.Translator\Pirates.Translator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Primitives\Protos\Translate.proto" Access="Public" GrpcServices="Server" />
+  </ItemGroup>
+
+</Project>

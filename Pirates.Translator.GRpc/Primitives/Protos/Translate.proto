@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Pirates.Translator.GRpc.Primitives.Protos";
+
+
+message TranslateRequest {
+	int64 source = 1;
+	int64 destination = 2;
+	string text = 3;
+}
+
+message TranslatResponse {
+	string result = 1;
+}
+
+service TranslatService {
+	rpc Translate(TranslateRequest) returns (TranslatResponse);
+}

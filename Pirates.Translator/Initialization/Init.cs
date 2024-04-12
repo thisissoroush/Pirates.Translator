@@ -9,5 +9,6 @@ public static class Init
     public static void RegisterTranslator(this IServiceCollection services, OS osMode = OS.Windows, string? pythonPath = null)
     {
         services.AddScoped<ITranslatorService,TranslatorService>();
+
     }
 }
