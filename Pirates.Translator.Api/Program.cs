@@ -17,7 +17,8 @@ var app = builder.Build();
 
 var translatorApi = app.MapGroup("/api");
 translatorApi.MapGet("", async (ITranslatorService translator) => {
-    var result = await translator.Translate(Language.English, Language.Persian, "Welcome");
+    var result = await translator.Translate(Language.English, Language.Persian, 
+        "Is this real? Or you might think it's not! Whatever, I'm going to test ( hello world! ).");
     return string.IsNullOrEmpty(result) ? Results.NotFound() : Results.Ok(result);
     });
 translatorApi.MapGet("/translate", async (Language source, Language destination, string text, ITranslatorService translator) =>
