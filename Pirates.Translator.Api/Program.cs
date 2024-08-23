@@ -1,4 +1,4 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 using Pirates.Translator.Initialization;
 using Pirates.Translator.Primitives.Enums;
 using Pirates.Translator.Services;
@@ -14,11 +14,10 @@ builder.Services.RegisterTranslator();
 
 var app = builder.Build();
 
-
+var text = "Is this real? Or you might think it's not! Whatever, I'm going to test ( hello world! ).";
 var translatorApi = app.MapGroup("/api");
 translatorApi.MapGet("", async (ITranslatorService translator) => {
-    var result = await translator.Translate(Language.English, Language.Persian, 
-        "Is this real? Or you might think it's not! Whatever, I'm going to test ( hello world! ).");
+    var result = await translator.Translate(Language.English, Language.Persian, text);
     return string.IsNullOrEmpty(result) ? Results.NotFound() : Results.Ok(result);
     });
 translatorApi.MapGet("/translate", async (Language source, Language destination, string text, ITranslatorService translator) =>
